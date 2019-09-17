@@ -75,14 +75,11 @@ public class MainActivity extends AppCompatActivity {
         EditText endereco = findViewById(R.id.endereco);
         String enderecoText = endereco.getText().toString();
 
-        //EditText cep = findViewById(R.id.cep);
-        //int cepNumero = Integer.parseInt(cep.getText().toString());
+        EditText cep = findViewById(R.id.cep);
+        String cepNumero = cep.getText().toString();
 
-        /*
-        boolean nomeRegex = Pattern.matches("\\d", nomeText);
-        boolean sobrenomeRegex = Pattern.matches("\\d", sobrenomeText);
-        boolean cepRegex = Pattern.matches();
-        */
+        boolean cepRegex = Pattern.matches("[0-9]{8}",cepNumero);
+
         if(TextUtils.isEmpty(nomeText)){
             Toast toast = Toast.makeText(context, "Campo 'nome' vazio!", duracao);
             toast.show();
@@ -92,9 +89,12 @@ public class MainActivity extends AppCompatActivity {
         } else if (TextUtils.isEmpty(enderecoText)){
             Toast toast = Toast.makeText(context, "Campo 'endereço' vazio!", duracao);
             toast.show();
-        } //else if ()
-
-
-
+        } else if (!cepRegex){
+            Toast toast = Toast.makeText(context, "Campo 'cep' inválido!", duracao);
+            toast.show();
+        } else{
+            Toast toast = Toast.makeText(context, "Formulário enviado", duracao);
+            toast.show();
+        }
     }
 }
