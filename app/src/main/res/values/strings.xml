@@ -9,6 +9,9 @@
     <string name="estado">Estado</string>
     <string name="validar">Validar</string>
     <string name="paises">Países</string>
+    <string name="txvPais">Selecione um país</string>
+    <string name="txvEstado">Selecione um estado</string>
+    <string name="txvCidade">Selecione uma cidade</string>
 
 
     <string-array name="array_paises">

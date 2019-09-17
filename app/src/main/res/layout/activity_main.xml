@@ -24,28 +24,6 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/endereco"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:ems="10"
-                android:hint="@string/endere_o"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/cep"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:ems="10"
-                android:hint="@string/cep"
-                android:importantForAutofill="no"
-                android:inputType="number" />
-
-            <EditText
                 android:id="@+id/nome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,31 +45,70 @@
                 android:importantForAutofill="no"
                 android:inputType="textPersonName" />
 
+            <EditText
+                android:id="@+id/endereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/endere_o"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/cep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/cep"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/txvPais" />
+
             <Spinner
                 android:id="@+id/pais"
                 android:layout_width="220dp"
                 android:layout_height="40dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/txvEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:spinnerMode="dialog" />
+                android:text="@string/txvEstado" />
 
             <Spinner
                 android:id="@+id/estado"
                 android:layout_width="220dp"
-                android:layout_height="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/txvCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp" />
+                android:layout_marginTop="24dp"
+                android:text="@string/txvCidade" />
 
             <Spinner
                 android:id="@+id/cidade"
                 android:layout_width="220dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp" />
+                android:layout_height="40dp"/>
 
             <Button
                 android:id="@+id/enviar"
-                android:layout_width="wrap_content"
+                android:layout_width="68dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="136dp"
                 android:layout_marginTop="96dp"
