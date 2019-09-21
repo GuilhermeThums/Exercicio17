@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 if(position == 28){
                     spinnerEstado.setAdapter(estadoAdapter);
+                } else{
+                    spinnerEstado.setAdapter(null);
                 }
             }
             @Override
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 if(position == 8){
                     spinnerCidade.setAdapter(cidadeAdapter);
+                } else{
+                    spinnerCidade.setAdapter(null);
                 }
             }
             @Override
